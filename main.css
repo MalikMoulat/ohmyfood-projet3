@@ -1,15 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.fa-solid {
+  margin-right: 18px;
+}
+
+/* icons index.html */
+.fa-1 {
+  padding: 3px 6px;
+  border-radius: 50px;
+  font-size: 12px;
+  background-color: #9356DC;
+  color: #ffff;
+  margin-left: -8px;
+}
+
+.fa-mobile-screen-button {
+  color: #afafaf;
+}
+
 header {
-  /*background-color: $colour-primary;*/
   height: 50px;
   width: 100%;
   padding-top: 15px;
-}
-
-@media screen and (max-width: 762px) {
-  header {
-    /*background-color: $colour-secondary;*/
-  }
 }
 
 header img {
@@ -23,7 +38,6 @@ header img {
 }
 
 .intro {
-  /*border: 1px solid red;*/
   text-align: center;
 }
 
@@ -77,11 +91,84 @@ header img {
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-html {
-  font-family: 'Roboto', sans-serif;
+.search {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+}
+
+@media screen and (max-width: 762px) {
+  .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.search__title {
+  text-align: center;
+  grid-column: span 3;
+}
+
+@media screen and (max-width: 762px) {
+  .search__title {
+    text-align: left;
+    padding-top: 25px;
+  }
+}
+
+.search__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  width: 300px;
+  margin: 10px;
+  background-color: #f6f6f6;
+}
+
+@media screen and (max-width: 762px) {
+  .search__card {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.search__card:hover {
+  background-color: #f2eafb;
+}
+
+.search__card:hover .fa-mobile-screen-button {
+  color: #9356DC;
+}
+
+.search__card--h3 {
+  margin-right: 30px;
 }
 
 body {
   margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
