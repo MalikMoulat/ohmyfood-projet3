@@ -1,0 +1,62 @@
+header {
+    /*background-color: $colour-primary;*/
+    height: 50px;
+    width: 100%;
+    padding-top: 15px;
+    @media screen and (max-width: 762px){
+        /*background-color: $colour-secondary;*/
+    }
+    img {
+        height: 60%;
+        width: 60%;
+        object-fit: contain;
+        display: block;
+        margin: auto;
+        padding-top: 5px;
+    }
+}
+
+.intro{
+    /*border: 1px solid red;*/
+    text-align: center;
+
+        &__localisation{
+            background-color: green;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+            background-color: #eaeaea;
+            box-shadow: 0 5px 5px -3px grey inset;
+            
+                &--icon{
+                    margin: 0 15px 0 0;
+                }
+        }
+        &__description{
+            background-color: #f6f6f6;
+            padding: 40px 40px;
+
+                &--title{
+                    margin: 0;
+                    font-weight: bold;
+                    padding: 0 33px;
+                }
+                &--desc{
+                    font-weight: lighter;
+                }
+                &--btn{
+                    margin-top: 15px;
+                    font-size: 18px;
+                    color: #ffff;
+                    background: rgb(147,86,220);
+                    background: linear-gradient(355deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%, rgba(0,0,0,1) 100%);
+                    padding: 15px 20px;
+                    border: none;
+                    border-radius: 50px;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                }
+        }
+}
+

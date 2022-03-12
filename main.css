@@ -1,1 +1,87 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+header {
+  /*background-color: $colour-primary;*/
+  height: 50px;
+  width: 100%;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 762px) {
+  header {
+    /*background-color: $colour-secondary;*/
+  }
+}
+
+header img {
+  height: 60%;
+  width: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.intro {
+  /*border: 1px solid red;*/
+  text-align: center;
+}
+
+.intro__localisation {
+  background-color: green;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: auto;
+  background-color: #eaeaea;
+  -webkit-box-shadow: 0 5px 5px -3px grey inset;
+          box-shadow: 0 5px 5px -3px grey inset;
+}
+
+.intro__localisation--icon {
+  margin: 0 15px 0 0;
+}
+
+.intro__description {
+  background-color: #f6f6f6;
+  padding: 40px 40px;
+}
+
+.intro__description--title {
+  margin: 0;
+  font-weight: bold;
+  padding: 0 33px;
+}
+
+.intro__description--desc {
+  font-weight: lighter;
+}
+
+.intro__description--btn {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #ffff;
+  background: #9356dc;
+  background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%, black 100%);
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */
