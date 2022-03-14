@@ -72,7 +72,7 @@ header {
         grid-column: span 3;
         @media screen and (max-width: 762px){
             text-align: left;
-            padding-top: 25px;  
+            padding-top: 25px;
         }
     }
     &__card{
@@ -90,8 +90,11 @@ header {
                 &:hover{
                     background-color: lighten($colour-primary,35%);
                 }
-                &:hover .fa-mobile-screen-button {
+                &:hover .fa-solid{
                     color: $colour-primary;
+                }
+                &:hover .fa-1{
+                    color: #ffff;
                 }
         &--h3{
             margin-right: 30px;
@@ -99,3 +102,122 @@ header {
     }
 }
 
+.restaurants{
+    border: solid 1px red;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 25px;
+    justify-items: center;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #f6f6f6;
+    @media screen and (max-width: 762px){
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    &__title{
+        text-align: center;
+        grid-column: span 2;
+        @media screen and (max-width: 762px){
+            text-align: left;
+            padding-top: 25px;
+        }
+    }
+    &__card{
+        position: relative;
+        width: 350px;
+        height: 250px;
+        border-radius: 20px;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 76% 12% 12%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        @media screen and (max-width: 762px){
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        &--img{
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height: 70%;
+            grid-column: 1 2;
+        }
+        &--new{
+            background-color: $colour-tertiary;
+            margin: 0;
+            grid-column: 2;
+            height: 20px;
+            color: darken($colour-tertiary, 30%);
+            margin: 14px;
+            padding: 6px 5px 6px 7px;
+            z-index: 1;
+        }
+        &--title{
+            margin: 0;
+            padding-left: 15px;
+        }
+        &--name{
+            margin: 0;
+            grid-row: 3;
+            padding-left: 15px;
+        }
+        .fa-solid{
+            margin: 0;
+            color: rgb(147,86,220);
+            color: linear-gradient(344deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%, rgba(0,0,0,1) 100%);
+            opacity: 0%;
+                &:hover{
+                    opacity: 100%;
+                }
+            
+        } 
+        .fa-heart{
+            grid-column: 2;
+            grid-row: 2/4;
+            font-size: 30px;
+            text-align: center;
+            width: 30px;
+            height: 28px;
+            margin-left: 43px;
+            margin-top: 3px;
+        }
+    }
+}
+
+.footer{
+    background-color: $colour-footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    padding: 0 50px 20px 50px;
+    margin-top: 50px;
+        a{
+            border: red 1px solid;
+            width: fit-content;
+            height: 20px;
+            margin: auto;
+        }
+        &__logo{
+            grid-column: span 4;
+            width: 200px;
+            margin: auto;
+            padding: 10px;
+                img{
+                    height: 25px;
+                    fill: #ffff;
+                }
+        }
+        &__restaurant, &__partnership, &__legalesnotice, &__contact{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffff;
+        }
+}
