@@ -198,11 +198,20 @@ header {
     row-gap: 20px;
     padding: 0 50px 20px 50px;
     margin-top: 50px;
+    @media screen and (max-width: 762px){
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px 20px;
+        row-gap: 5px;
+    }
         a{
-            border: red 1px solid;
             width: fit-content;
             height: 20px;
             margin: auto;
+            @media screen and (max-width: 762px){
+                margin: 0;   
+            }
         }
         &__logo{
             grid-column: span 4;
@@ -214,10 +223,16 @@ header {
                     fill: #ffff;
                 }
         }
+        .fa-solid{
+            margin-right: 10px;
+        }
         &__restaurant, &__partnership, &__legalesnotice, &__contact{
             display: flex;
             align-items: center;
             justify-content: center;
             color: #ffff;
+            @media screen and (max-width: 762px){
+
+            }
         }
 }
