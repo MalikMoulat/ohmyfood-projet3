@@ -16,3 +16,19 @@
 .fa-mobile-screen-button, .fa-list-ul, .fa-store{
     color: #afafaf;
 }
+
+/* Heart icons  */
+.fa-solid.fa-heart{
+    margin: 0;
+    color: rgb(147,86,220);
+    color: linear-gradient(344deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%, rgba(0,0,0,1) 100%);
+    opacity: 0%;
+        &:hover{
+            transition: 0.2s ease-in-out;
+            opacity: 100%;
+        }
+    
+}
+
+
+/* icons lapalettedugout.html */

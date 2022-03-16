@@ -6,10 +6,11 @@
         <link rel="stylesheet" href="main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <header>
-        <img src="images/logo/ohmyfood.png" alt="">
-    </header>
-    <body> 
+    
+    <body>
+        <header>
+            <img src="images/logo/ohmyfood.png" alt="">
+        </header>
         <section class="intro">  
             <div class="intro__localisation">
                 <div class="intro__localisation--icon"><i class="fa-solid fa-location-dot"></i></div>
@@ -19,7 +20,9 @@
             <div class="intro__description">
                 <h1 class="intro__description--title">Réservez le menu qui vous convient</h1>
                 <p class="intro__description--desc">Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
-                <button class="intro__description--btn" type="button" href="#">Explorer nos restaurants</button>
+                <form action="#">
+                    <button class="intro__description--btn" type="submit" href="#">Explorer nos restaurants</button>
+                </form>
             </div>
         </section>
 
@@ -50,7 +53,7 @@
 
         <section class="restaurants">
             <h2 class="restaurants__title">Restaurants</h2>
-            <a href="#">
+            <a href="lapalettedugout.html">
                 <div class="restaurants__card">
                     <img class="restaurants__card--img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
                     <p class="restaurants__card--new">Nouveau</p>

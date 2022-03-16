@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html {
   font-family: 'Roboto', sans-serif;
 }
@@ -21,10 +22,31 @@ html {
   color: #afafaf;
 }
 
+/* Heart icons  */
+.fa-solid.fa-heart {
+  margin: 0;
+  color: #9356dc;
+  color: linear-gradient(344deg, #9356dc 0%, #ff79da 100%, black 100%);
+  opacity: 0%;
+}
+
+.fa-solid.fa-heart:hover {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  opacity: 100%;
+}
+
+/* icons lapalettedugout.html */
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 50px;
-  width: 100%;
   padding-top: 15px;
+  padding-left: 20px;
 }
 
 header img {
@@ -264,17 +286,6 @@ header img {
   padding-left: 15px;
 }
 
-.restaurants__card .fa-solid {
-  margin: 0;
-  color: #9356dc;
-  color: linear-gradient(344deg, #9356dc 0%, #ff79da 100%, black 100%);
-  opacity: 0%;
-}
-
-.restaurants__card .fa-solid:hover {
-  opacity: 100%;
-}
-
 .restaurants__card .fa-heart {
   -ms-grid-column: 2;
   grid-column: 2;
@@ -303,7 +314,7 @@ header img {
           justify-content: center;
   row-gap: 20px;
   padding: 0 50px 20px 50px;
-  margin-top: 50px;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 762px) {
@@ -364,6 +375,185 @@ header img {
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffff;
+}
+
+.headrestaurantspage {
+  height: 400px;
+  width: 100%;
+}
+
+.headrestaurantspage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+  border-radius: 40px 40px 0 0;
+  padding-bottom: 60px;
+}
+
+.menu__header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 25px;
+  margin-top: -50px;
+}
+
+.menu__header h2 {
+  margin: 0;
+  font-family: 'Shrikhand', cursive;
+}
+
+.menu__header .fa-heart {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  font-size: 20px;
+}
+
+.menu form {
+  text-align: center;
+}
+
+.listmenu {
+  background-color: #f6f6f6;
+  padding: 0 100px;
+  margin: 40px 0;
+}
+
+@media screen and (max-width: 762px) {
+  .listmenu {
+    padding: 0 25px;
+  }
+}
+
+.listmenu article {
+  margin: 10px 0;
+}
+
+.listmenu article:hover .listmenu__card--check {
+  width: 70px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.listmenu article:active .listmenu__card--check {
+  width: 70px;
+}
+
+.listmenu article:hover .fa-check-circle {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.listmenu h3 {
+  margin: 0;
+  font-weight: 200;
+}
+
+.listmenu__line {
+  width: 50px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-top: 5px;
+}
+
+.listmenu__card {
+  height: 60px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.listmenu__card--name {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.listmenu__card--name h4, .listmenu__card--name p {
+  margin: 0;
+  padding: 3px;
+  margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listmenu__card--name h4 {
+  font-weight: bold;
+}
+
+.listmenu__card--name p {
+  font-weight: 100;
+}
+
+.listmenu__card--price {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 20px;
+  margin-bottom: 13px;
+}
+
+.listmenu__card--check {
+  width: 0;
+  height: 100%;
+  background-color: #99E2D0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+.listmenu__card--check .fa-check-circle {
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 762px) {
+  .listmenu__card--check .fa-check-circle {
+    padding: 14px;
+  }
 }
 
 body {

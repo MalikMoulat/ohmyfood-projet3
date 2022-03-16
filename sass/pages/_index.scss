@@ -1,7 +1,9 @@
 header {
+    display: flex;
+    align-items: center;
     height: 50px;
-    width: 100%;
     padding-top: 15px;
+    padding-left: 20px;
     img {
         height: 60%;
         width: 60%;
@@ -166,16 +168,6 @@ header {
             grid-row: 3;
             padding-left: 15px;
         }
-        .fa-solid{
-            margin: 0;
-            color: rgb(147,86,220);
-            color: linear-gradient(344deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%, rgba(0,0,0,1) 100%);
-            opacity: 0%;
-                &:hover{
-                    opacity: 100%;
-                }
-            
-        } 
         .fa-heart{
             grid-column: 2;
             grid-row: 2/4;
@@ -197,7 +189,7 @@ header {
     justify-content: center;
     row-gap: 20px;
     padding: 0 50px 20px 50px;
-    margin-top: 50px;
+    margin-top: 0;
     @media screen and (max-width: 762px){
         display: flex;
         flex-direction: column;
