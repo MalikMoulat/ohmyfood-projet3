@@ -26,7 +26,6 @@ html {
 .fa-solid.fa-heart {
   margin: 0;
   color: #9356dc;
-  color: linear-gradient(344deg, #9356dc 0%, #ff79da 100%, black 100%);
   opacity: 0%;
 }
 
@@ -85,6 +84,10 @@ header img {
   margin: 0 15px 0 0;
 }
 
+.intro__localisation--icon .fa-location-dot {
+  margin-right: 0;
+}
+
 .intro__description {
   background-color: #f6f6f6;
   padding: 40px 40px;
@@ -113,6 +116,10 @@ header img {
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+.intro__description--btn:hover {
+  cursor: pointer;
+}
+
 .search {
   max-width: 1000px;
   width: 100%;
@@ -128,6 +135,19 @@ header img {
   grid-row-gap: 6px;
 }
 
+@media screen and (max-width: 1050px) {
+  .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 762px) {
   .search {
     display: -webkit-box;
@@ -140,6 +160,16 @@ header img {
   }
 }
 
+.search a {
+  margin: 18px;
+}
+
+@media screen and (max-width: 1050px) {
+  .search a {
+    margin: 0 18px;
+  }
+}
+
 .search__title {
   text-align: center;
   grid-column: span 3;
@@ -149,6 +179,7 @@ header img {
   .search__title {
     text-align: left;
     padding-top: 25px;
+    margin-left: 18px;
   }
 }
 
@@ -163,6 +194,14 @@ header img {
   width: 300px;
   margin: 10px;
   background-color: #f6f6f6;
+}
+
+@media screen and (max-width: 1050px) {
+  .search__card {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 762px) {
@@ -181,7 +220,7 @@ header img {
   color: #9356DC;
 }
 
-.search__card:hover .fa-1 {
+.search__card:hover .whitenumber {
   color: #ffff;
 }
 
@@ -190,17 +229,21 @@ header img {
 }
 
 .restaurants {
-  border: solid 1px red;
   margin-bottom: 100px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 350px 350px;
+      grid-template-columns: 350px 350px;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   row-gap: 25px;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
   justify-items: center;
-  max-width: 1000px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
   margin: auto;
   background-color: #f6f6f6;
 }
@@ -272,11 +315,14 @@ header img {
   margin: 14px;
   padding: 6px 5px 6px 7px;
   z-index: 1;
+  width: 66px;
 }
 
 .restaurants__card--title {
   margin: 0;
   padding-left: 15px;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
 .restaurants__card--name {

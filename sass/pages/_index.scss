@@ -28,6 +28,9 @@ header {
             box-shadow: 0 5px 5px -3px grey inset;
                 &--icon{
                     margin: 0 15px 0 0;
+                        .fa-location-dot{
+                            margin-right: 0;
+                        }
                 }
         }
         &__description{
@@ -52,6 +55,9 @@ header {
                     border: none;
                     border-radius: 50px;
                     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                        &:hover{
+                            cursor: pointer;
+                        }
                 }
         }
 }
@@ -65,54 +71,74 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 6px;
     grid-row-gap:6px;
+    @media screen and (max-width: 1050px){
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
     @media screen and (max-width: 762px){
         display: flex;
         flex-direction: column;
     }
-    &__title{
-        text-align: center;
-        grid-column: span 3;
-        @media screen and (max-width: 762px){
-            text-align: left;
-            padding-top: 25px;
+        a{
+            margin: 18px;
+            @media screen and (max-width: 1050px){
+                margin: 0 18px;
+            }
+
         }
-    }
-    &__card{
-        display: flex;
-        align-items: center;
-        border-radius: 15px;
-        width: 300px;
-        margin: 10px;
-        background-color: #f6f6f6;
-        @media screen and (max-width: 762px){
-            margin: 0;
-            width: 100%;
-            margin-bottom: 10px;
+        &__title{
+            text-align: center;
+            grid-column: span 3;
+            @media screen and (max-width: 762px){
+                text-align: left;
+                padding-top: 25px;
+                margin-left: 18px;
+            }
         }
-                &:hover{
-                    background-color: lighten($colour-primary,35%);
-                }
-                &:hover .fa-solid{
-                    color: $colour-primary;
-                }
-                &:hover .fa-1{
-                    color: #ffff;
-                }
-        &--h3{
-            margin-right: 30px;
-        }
+        &__card{
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            width: 300px;
+            margin: 10px;
+            background-color: #f6f6f6;
+            @media screen and (max-width: 1050px){
+                margin: 0;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            @media screen and (max-width: 762px){
+                margin: 0;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+                    &:hover{
+                        background-color: lighten($colour-primary,35%);
+                    }
+                    &:hover .fa-solid{
+                        color: $colour-primary;
+                    }
+                    &:hover .whitenumber{
+                        color: #ffff;
+                    }
+            &--h3{
+                margin-right: 30px;
+            }
     }
 }
 
 .restaurants{
-    border: solid 1px red;
     margin-bottom: 100px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 350px 350px;
     grid-template-rows: auto;
     row-gap: 25px;
+    column-gap: 25px;
     justify-items: center;
-    max-width: 1000px;
+    justify-content: center;
+    
+    padding-bottom: 50px;
     margin: auto;
     background-color: #f6f6f6;
     @media screen and (max-width: 762px){
@@ -158,10 +184,12 @@ header {
             margin: 14px;
             padding: 6px 5px 6px 7px;
             z-index: 1;
+            width: 66px;
         }
         &--title{
             margin: 0;
             padding-left: 15px;
+            grid-row: 2;
         }
         &--name{
             margin: 0;
