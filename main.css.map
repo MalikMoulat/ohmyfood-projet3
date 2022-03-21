@@ -7,7 +7,7 @@
         "sass/base/_typography.scss",
         "sass/layout/_icons.scss",
         "sass/pages/_index.scss",
-        "sass/pages/_lapalettedugout.scss"
+        "sass/pages/restaurantspage.scss"
     ],
     "names": [],
     "file": "main.css"
