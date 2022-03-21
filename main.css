@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html {
@@ -478,6 +479,8 @@ header img {
   background-color: #f6f6f6;
   padding: 0 100px;
   margin: 40px 0;
+  height: 280px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 762px) {
@@ -488,6 +491,8 @@ header img {
 
 .listmenu article {
   margin: 10px 0;
+  opacity: 0;
+  /* Opacité avant l'animation d'intro */
 }
 
 .listmenu article:hover .listmenu__card--check {
@@ -599,6 +604,47 @@ header img {
 @media screen and (max-width: 762px) {
   .listmenu__card--check .fa-check-circle {
     padding: 14px;
+  }
+}
+
+.delay_1 {
+  -webkit-animation: slideon 1s ease-in-out 300ms forwards;
+          animation: slideon 1s ease-in-out 300ms forwards;
+}
+
+.delay_2 {
+  -webkit-animation: slideon 1s ease-in-out 600ms forwards;
+          animation: slideon 1s ease-in-out 600ms forwards;
+}
+
+.delay_3 {
+  -webkit-animation: slideon 1s ease-in-out 900ms forwards;
+          animation: slideon 1s ease-in-out 900ms forwards;
+}
+
+@-webkit-keyframes slideon {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideon {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
