@@ -5,8 +5,14 @@
 
 @import "sass/pages/index.scss";
 @import "sass/pages/restaurantspage.scss";
+@import "sass/pages/loading";
     
 
+html{
+    height: 100%;
+    margin: 0;
+	padding: 0;
+}
 
 body{
     margin: 0;
