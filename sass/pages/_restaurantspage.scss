@@ -19,7 +19,7 @@
             display: grid;
             grid-template-columns: 90% 10%;
             align-items: center;
-            padding: 20px 25px;
+            padding: 20px 25px 0 25px;
             margin-top: -50px;
                 h2{
                     margin: 0;
@@ -39,10 +39,11 @@
 .listmenu{
     background-color: #f6f6f6;
     padding: 0 100px;
-    margin: 40px 0;
+    margin: 25px 0;
     height: auto;
     padding-bottom: 22px;
     overflow: hidden;
+    
     @media screen and (max-width: 762px){
         padding: 0 25px;
     }
@@ -59,6 +60,7 @@
                 &:hover .fa-check-circle{
                     transform: rotate(360deg);
                     transition: 0.4s ease-in-out;
+                    transition-delay: 150ms;
                 }
         }
         h3{
@@ -93,10 +95,10 @@
                             text-overflow: ellipsis;
                         }
                         h4{
-                            font-weight: bold;
+                            font-weight: 500;
                         }
                         p{
-                            font-weight: 100;
+                            font-weight: lighter;
                         }
                 }
                 &--price{

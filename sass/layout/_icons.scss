@@ -20,7 +20,7 @@
 /* Heart icons  */
 .fa-solid.fa-heart{
     margin: 0;
-    color: rgb(147,86,220);
+    color: lighten($colour-primary,10%);
     opacity: 0%;
         &:hover{
             transition: 0.2s ease-in-out;
@@ -30,4 +30,8 @@
 }
 
 
-/* icons lapalettedugout.html */
+/* icons Header restaurants pages */
+
+.fa-arrow-left{
+    margin-left: 20px;
+}
