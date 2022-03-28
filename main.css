@@ -351,83 +351,6 @@ header img {
   margin: 10px 0 0 43px;
 }
 
-.footer {
-  background-color: #363636;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  row-gap: 20px;
-  padding: 0 50px 20px 50px;
-  margin-top: 0;
-}
-
-@media screen and (max-width: 762px) {
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding: 20px 20px 50px 20px;
-    row-gap: 5px;
-  }
-}
-
-.footer a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 20px;
-  margin: auto;
-}
-
-@media screen and (max-width: 762px) {
-  .footer a {
-    margin: 2px 0 2px 0;
-  }
-}
-
-.footer__logo {
-  grid-column: span 4;
-  width: 200px;
-  margin: auto;
-  padding: 10px 10px 10px 0;
-}
-
-.footer__logo img {
-  height: 25px;
-  fill: #ffff;
-}
-
-.footer .fa-solid {
-  margin-right: 10px;
-}
-
-.footer__restaurant, .footer__partnership, .footer__legalesnotice, .footer__contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #ffff;
-}
-
 .headrestaurantspage {
   height: 400px;
   width: 100%;
@@ -453,8 +376,8 @@ header img {
 .menu__header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90% 10%;
-      grid-template-columns: 90% 10%;
+  -ms-grid-columns: 95% 5%;
+      grid-template-columns: 95% 5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -482,10 +405,11 @@ header img {
 .listmenu {
   background-color: #f6f6f6;
   padding: 0 100px;
-  margin: 25px 0;
+  margin-top: 10px;
   height: auto;
   padding-bottom: 22px;
   overflow: hidden;
+  min-height: 270px;
 }
 
 @media screen and (max-width: 762px) {
@@ -546,6 +470,8 @@ header img {
           align-items: center;
   overflow: hidden;
   border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 33px -16px rgba(89, 89, 89, 0.377);
+          box-shadow: 0px 10px 33px -16px rgba(89, 89, 89, 0.377);
 }
 
 .listmenu__card--name {
@@ -656,6 +582,83 @@ header img {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+.footer {
+  background-color: #363636;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 20px;
+  padding: 0 50px 20px 50px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 762px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 20px 20px 50px 20px;
+    row-gap: 5px;
+  }
+}
+
+.footer a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 20px;
+  margin: auto;
+}
+
+@media screen and (max-width: 762px) {
+  .footer a {
+    margin: 2px 0 2px 0;
+  }
+}
+
+.footer__logo {
+  grid-column: span 4;
+  width: 200px;
+  margin: auto;
+  padding: 10px 10px 10px 0;
+}
+
+.footer__logo img {
+  height: 25px;
+  fill: #ffff;
+}
+
+.footer .fa-solid {
+  margin-right: 10px;
+}
+
+.footer__restaurant, .footer__partnership, .footer__legalesnotice, .footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffff;
 }
 
 .loader {

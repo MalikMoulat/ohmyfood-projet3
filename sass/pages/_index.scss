@@ -1,18 +1,3 @@
-header {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    padding-top: 5px;
-    img {
-        height: 60%;
-        width: 60%;
-        object-fit: contain;
-        display: block;
-        margin: auto;
-        padding-top: 5px;
-    }
-}
-
 .intro{
     text-align: center;
 
@@ -207,52 +192,4 @@ header {
             margin: 10px 0 0 43px;
         }
     }
-}
-
-.footer{
-    background-color: $colour-footer;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    row-gap: 20px;
-    padding: 0 50px 20px 50px;
-    margin-top: 0;
-    @media screen and (max-width: 762px){
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px 20px 50px 20px;
-        row-gap: 5px;
-    }
-        a{
-            width: fit-content;
-            height: 20px;
-            margin: auto;
-            @media screen and (max-width: 762px){
-                margin: 2px 0 2px 0;   
-            }
-        }
-        &__logo{
-            grid-column: span 4;
-            width: 200px;
-            margin: auto;
-            padding: 10px 10px 10px 0;
-                img{
-                    height: 25px;
-                    fill: #ffff;
-                }
-        }
-        .fa-solid{
-            margin-right: 10px;
-        }
-        &__restaurant, &__partnership, &__legalesnotice, &__contact{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ffff;
-            @media screen and (max-width: 762px){
-
-            }
-        }
 }
