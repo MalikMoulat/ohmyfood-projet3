@@ -26,8 +26,11 @@ html {
 /* Heart icons  */
 .fa-solid.fa-heart {
   margin: 0;
-  color: #ae80e5;
-  opacity: 0%;
+  background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%, black 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
 }
 
 .fa-solid.fa-heart:hover {

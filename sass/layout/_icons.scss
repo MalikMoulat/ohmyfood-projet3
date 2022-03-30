@@ -20,8 +20,11 @@
 /* Heart icons  */
 .fa-solid.fa-heart{
     margin: 0;
-    color: lighten($colour-primary,10%);
-    opacity: 0%;
+    background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%, black 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
         &:hover{
             transition: 0.2s ease-in-out;
             opacity: 100%;
