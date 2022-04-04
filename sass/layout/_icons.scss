@@ -31,8 +31,7 @@
     color: transparent;
     opacity: 0;
         &:hover{
-            transition: 0.2s ease-in-out;
-            opacity: 100%;
+            animation: HeartAnimation 0.5s ease-in-out 0ms forwards;
         }
     
 }
@@ -43,3 +42,21 @@
 .fa-arrow-left{
     margin-left: 20px;
 }
+
+
+
+
+
+
+/***********/
+
+@keyframes HeartAnimation {
+    0%{
+      transform: scale(.2);
+      opacity: 0;
+    }
+    100%{
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

@@ -39,14 +39,39 @@ html {
 }
 
 .fa-solid.fa-heart:hover {
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  opacity: 100%;
+  -webkit-animation: HeartAnimation 0.5s ease-in-out 0ms forwards;
+          animation: HeartAnimation 0.5s ease-in-out 0ms forwards;
 }
 
 /* icons Header restaurants pages */
 .fa-arrow-left {
   margin-left: 20px;
+}
+
+/***********/
+@-webkit-keyframes HeartAnimation {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes HeartAnimation {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
 }
 
 header {
@@ -395,8 +420,11 @@ header img {
 .menu__header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 95% 5%;
-      grid-template-columns: 95% 5%;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
