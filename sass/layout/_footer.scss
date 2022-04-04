@@ -33,6 +33,10 @@
                 }
         }
         .fa-solid{
+            margin-right: 13px;
+        }
+        .fa-handshake-angle{
+            font-size: 12px;
             margin-right: 10px;
         }
         &__restaurant, &__partnership, &__legalesnotice, &__contact{
@@ -40,8 +44,7 @@
             align-items: center;
             justify-content: center;
             color: #ffff;
-            @media screen and (max-width: 762px){
-
-            }
+            font-size: 14px;
+            font-weight: bold;
         }
 }

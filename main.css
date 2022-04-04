@@ -11,12 +11,17 @@ html {
 
 /* icons index.html */
 .fa-1, .fa-2, .fa-3 {
-  padding: 3px 6px;
-  border-radius: 50px;
+  padding: 4px 6px;
+  border-radius: 50%;
   font-size: 12px;
   background-color: #9356DC;
   color: #ffff;
   margin-left: -8px;
+  font-size: xx-small;
+}
+
+.fa-1 {
+  padding: 4px 6px;
 }
 
 .fa-mobile-screen-button, .fa-list-ul, .fa-store {
@@ -130,6 +135,7 @@ header img {
 
 .intro__description--desc {
   font-weight: lighter;
+  font-weight: 300;
 }
 
 .search {
@@ -179,6 +185,7 @@ header img {
 @media screen and (max-width: 1050px) {
   .search a {
     margin: 0 18px;
+    margin-left: 26px;
   }
 }
 
@@ -237,7 +244,9 @@ header img {
 }
 
 .search__card--h3 {
-  margin-right: 30px;
+  margin: 22px 0 22px 0;
+  font-weight: 400;
+  font-size: initial;
 }
 
 .restaurants {
@@ -269,7 +278,7 @@ header img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 10px;
+    padding: 18px;
   }
 }
 
@@ -345,6 +354,7 @@ header img {
   grid-row: 3;
   padding-left: 15px;
   font-weight: lighter;
+  font-weight: 300;
 }
 
 .restaurants__card .fa-heart {
@@ -455,7 +465,7 @@ header img {
 
 .listmenu h3 {
   margin: 0;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .listmenu__line {
@@ -504,7 +514,7 @@ header img {
 }
 
 .listmenu__card--name p {
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .listmenu__card--price {
@@ -655,6 +665,11 @@ header img {
 }
 
 .footer .fa-solid {
+  margin-right: 13px;
+}
+
+.footer .fa-handshake-angle {
+  font-size: 12px;
   margin-right: 10px;
 }
 
@@ -669,6 +684,8 @@ header img {
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffff;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .loader {

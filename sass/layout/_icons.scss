@@ -6,16 +6,21 @@
 /* icons index.html */
 
 .fa-1, .fa-2, .fa-3{
-    padding: 3px 6px;
-    border-radius: 50px;
+    padding: 4px 6px;
+    border-radius: 50%;
     font-size: 12px;
     background-color: $colour-primary;
     color: #ffff;
     margin-left: -8px;
+    font-size: xx-small;
+}
+.fa-1{
+    padding: 4px 6px;
 }
 .fa-mobile-screen-button, .fa-list-ul, .fa-store{
     color: #afafaf;
 }
+
 
 /* Heart icons  */
 .fa-solid.fa-heart{
